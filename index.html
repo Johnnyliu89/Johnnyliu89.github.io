@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Johnny's Website</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="bookmark" href="favicon.ico"/>
+    <audio autoplay="autoplay" loop="loop" src="bgm.mp3">瀏覽器不支援audio</audio>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <style type="text/css"></style>
+
+    <script>
+      function time(){
+        var today = new Date();
+        var date = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
+        var hours = today.getHours();
+        hours = hours < 10 ? '0'+hours : hours;
+        var minutes = today.getMinutes();
+        minutes = minutes < 10 ? '0'+minutes : minutes;
+        var seconds = today.getSeconds();
+        seconds = seconds < 10 ? '0'+seconds : seconds;
+        var time = hours + ":" + minutes + ":" + seconds;
+        var dateTime = date+' '+time;
+        document.getElementById("date").innerHTML = dateTime;
+        setTimeout("time()", 1000);
+      }
+    </script>
+  </head>
+  
+  <body onload=time()>
+    <h1>Chiang-Lin Liu</h1>
+    <img src="my picture.png" alt="Headshot: Photo taken when I was 3 years old" title="Chiang-Lin Liu" width="250px">
+
+    <p><strong>Education</strong></p>
+
+    <ul>
+      <li>High school: <a href="https://www.tnfsh.tn.edu.tw/"> National Tainan First Senior High School </a></li>
+      <li>Major department: <a href="https://web.ee.ntu.edu.tw/"> National Taiwan University Department of Electrical Engineering </a></li>
+    </ul>
+
+    <p><strong>Hobbies</strong></p>
+    <ol>
+      <li>Watch <a href="https://ani.gamer.com.tw/">Anime Videos</a></li>
+      <li>Watch Videos on <a href="https://www.youtube.com/">YouTube</a></li>
+      <li>Play Games (Ex. <a href="https://www.minecraft.net/zh-hant/">Minecraft</a>)</li>
+    </ol>
+
+    <br>
+    <br>
+    
+    <span id="date"></span>
+  
+</body>
+</html>

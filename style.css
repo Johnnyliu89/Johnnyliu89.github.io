@@ -1,0 +1,49 @@
+html {
+  background-color: #9ccaf5;
+}
+
+p {
+  font-size: 18px;
+}
+
+li {
+  font-size: 16px;
+  line-height: 2;
+}
+
+span {
+  font-size: 14px;
+  text-align: right;
+  display:block;
+}
+
+p, li, span {
+  font-family: 'Krona One', sans-serif;
+}
+
+body {
+  width: 700px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 0 20px 20px 20px;
+  border: 2px solid black;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: 'Zen Dots', cursive;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #0d0080;
+  text-shadow: 3px 3px 1px rgb(87, 136, 243);
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+a:hover{
+  color:red;
+}
