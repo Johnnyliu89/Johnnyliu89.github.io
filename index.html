@@ -6,9 +6,8 @@
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <link rel="bookmark" type="image/png" href="favicon.png"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
-    <audio autoplay="autoplay" loop="loop" src="bgm.mp3">瀏覽器不支援audio</audio>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
     <style type="text/css">
       html {
         background: -webkit-radial-gradient(circle,white,#9ccaf5);
@@ -19,7 +18,7 @@
 
       body {
         width: 90%;
-        min-width: 600px;
+        min-width: 700px;
         margin: 0 auto;
         background-color: transparent;
         padding: 20px 20px 20px 20px;
@@ -29,26 +28,30 @@
         font-size: 70px;
         font-family: 'Zen Dots', cursive;
         text-align: center;
+        letter-spacing: 5px;
         margin: 0;
         padding: 20px 0;
         color: #0d0080;
         text-shadow: 3px 3px 1px rgb(87, 136, 243);
       }
 
-      p {font-size: 18px;}
+      h2 {font-size: 34px;}
 
-      li {
-        font-size: 16px;
-        line-height: 2;
+      p, li {
+        font-size: 30px;
+        line-height: 1.5;
       }
 
       span {
-        font-size: 14px;
+        font-size: 20px;
         text-align: right;
         display:block;
       }
 
-      p, li, span {font-family: 'Krona One', sans-serif;}
+      h2, p, li, span {
+        font-family: 'ZCOOL QingKe HuangYou', cursive;
+        letter-spacing: 2px;
+      }
 
       img {
         display: block;
@@ -56,6 +59,8 @@
       }
 
       a:hover{color:red;}
+
+      audio {width: 100%;}
     </style>
 
     <script>
@@ -81,14 +86,15 @@
 
     <img src="my picture.png" alt="Headshot: Photo taken when I was 3 years old" title="劉姜麟 (Chiang-Lin Liu)" width="250px">
 
-    <p><strong>Education</strong></p>
+    <h2><strong>Biosketch</strong></h2>
 
-    <ul>
-      <li>High school: <a href="https://www.tnfsh.tn.edu.tw/"> National Tainan First Senior High School </a></li>
-      <li>Major department: <a href="https://web.ee.ntu.edu.tw/"> National Taiwan University Department of Electrical Engineering </a></li>
-    </ul>
+    <p>
+      My name is Chiang-Lin Liu (劉姜麟), and I am now a junior of <a href="https://www.ntu.edu.tw/">National Taiwan University</a>, 
+      major in <a href="https://web.ee.ntu.edu.tw/">Department of Electrical Engineering</a>. 
+      As for my high school, I graduated from <a href="https://www.tnfsh.tn.edu.tw/">National Tainan First Senior High School</a>.
+    </p>
 
-    <p><strong>Hobbies</strong></p>
+    <h2><strong>Hobbies</strong></h2>
     <ol>
       <li>Watch <a href="https://ani.gamer.com.tw/">Anime Videos</a></li>
       <li>Watch Videos on <a href="https://www.youtube.com/">YouTube</a></li>
@@ -96,9 +102,9 @@
     </ol>
 
     <br>
+    <span><audio autoplay="autoplay" controls="controls" loop="loop" src="bgm.mp3">瀏覽器不支援audio</audio></span>
     <br>
-    
     <span id="date"></span>
   
-</body>
+  </body>
 </html>
